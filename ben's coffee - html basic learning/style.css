@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: darksalmon;
+    font-family: sans-serif;
+    font-weight: 400;
+
+
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    
+
+    
+}
+header{
+   
+    background-color: rgb(63, 19, 8);
+    height:130px;
+}
+.logo{
+    display:block;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+nav li{
+    display:inline-block;
+    padding-bottom: 50px;
+    margin: 20px 158px;
+    padding: 0px;
+    position: relative;
+    
+
+
+}
+nav a {
+    color:antiquewhite;
+    text-decoration: None;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+nav a:hover{
+    color:rgb(193, 151, 13);
+    
+}
+nav a::before {
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: antiquewhite;
+    position:absolute;
+    bottom:0;
+    width: 0%;
+    transition:all ease-in-out 200ms;
+}
+nav a:hover::before {
+    width: 100%;
+    
+}
+.bean-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height:100%;
+    z-index: -1;
+
+
+}
