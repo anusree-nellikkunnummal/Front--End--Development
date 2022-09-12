@@ -1,0 +1,15 @@
+body {
+  font-size: 3rem;
+}
+#rectangle {
+  width: 21rem;
+  height: 40vh;
+}
+#small_rectangle {
+  width: 19rem;
+  height: 100px;
+}
+.ip {
+  width: 300px;
+  height: 3rem;
+}

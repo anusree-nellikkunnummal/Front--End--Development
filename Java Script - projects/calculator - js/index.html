@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="rectangle" class="border rounded bg-grayish bg-gradient mx-auto mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 w-100">
+                    <input type="text" id="lab" value="" class=" mt-5 text-end fa-x ip">
+                </div>
+            </div>
+            <div class="row mx-auto pt-5 ps-3 px-0" >
+                
+                <div class="col-sm-2 fa-2x me-3 ">
+                    <input type="button" value="7" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('7')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input type="button" value="8" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('8')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input type="button" value="9" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('9')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input value="/" type="button" class="btn btn-info" onclick="view('/')">
+                </div>
+            </div>
+            <div class="row mx-auto pt-1 ps-3 px-0" >
+                
+                <div class="col-sm-2 fa-2x me-3 ">
+                    <input type="button" value="4" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('4')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" value="5" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('5')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" value="6" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('6')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" value="*"  class="btn btn-info" onclick="view('*')">
+                </div>
+              
+            </div>
+            <div class="row mx-auto pt-1 ps-3 px-0" >
+                
+                <div class="col-sm-2 fa-2x me-3 ">
+                   <input type="button" value="1" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('1')" >
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input type="button" value="2" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('2')" >
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input type="button" value="3" class="btn btn-light" data-mdb-ripple-color="dark" onclick="view('3')" >
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input type="button" value="-" class="btn btn-info" onclick="view('-')">
+                </div>
+              
+            </div>
+            <div class="row mx-auto pt-1 ps-3 px-0" >
+                
+                <div class="col-sm-2 fa-2x me-3 ">
+                    <input type="button" class="btn btn-light" value="0" data-mdb-ripple-color="dark" onclick="view('0')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" class="btn btn-light" value="+" data-mdb-ripple-color="dark" onclick="view('+')">
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" class="btn btn-danger" value="c" onclick="clr()" >
+                </div>
+                <div class="col-sm-2 fa-2x me-3">
+                    <input  type="button" class="btn btn-warning" value="=" onclick="operation()">
+                </div>
+              
+            </div> 
+        </div>
+        </div>
+
+    </div>
+  
+ <script src="./main.js"></script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
+></script>  
+</body>
+</html>
