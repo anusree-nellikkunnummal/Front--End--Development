@@ -1,0 +1,26 @@
+div{
+    height:100px;
+    width:100px;
+    
+   
+}
+
+
+:root{
+    
+    --primaryColor:rgb(59, 22, 22);
+    --secondarycolor:blue;
+    --herotransition: background 3s easein 2s;
+
+}
+.three{
+    background-color: var(--primaryColor);
+    transition:var(--herotransition)
+    
+}
+.three:hover{
+    background-color: var(--secondarycolor);
+}
+.fa-solid {
+    color:var(--secondarycolor);
+}
