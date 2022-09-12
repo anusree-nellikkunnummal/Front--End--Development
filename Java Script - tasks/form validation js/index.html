@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form submit</title>
+    <!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <form  class="border border-info border-5 m-5 p-5 w-50 mx-auto bg-dark  text-dark" onsubmit="validate()">
+  <!-- first name -->
+  <div class="row mb-4 mt-5 pt-5 ">
+    <div class="col-sm-7 mx-auto ">
+      <div class="form-outline">
+        <input type="text" id="nameinput" class="form-control" />
+        <label class="form-label text-light" for="nameinput">First name</label>
+      </div>
+    </div>
+  </div>
+  <!-- last name -->
+  <div class="row mb-4 mt-5 pt-5">
+        <div class="col-sm-7 mx-auto">
+            <div class="form-outline">
+                <input type="text" id="lastinput" class="form-control" />
+                <label class="form-label text-light" for="lastinput">Last name</label>
+            </div>
+        </div>
+    </div>
+
+  <!-- birth input -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto">
+      <div class="form-outline">
+        <input type="text" id="birthinput" class="form-control" />
+        <label class="form-label text-light" for="birthinput">Date of birth</label>
+      </div>
+    </div>
+  </div>
+  <!-- email input -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto">
+      <div class="form-outline">
+        <input type="text" id="mailinput" class="form-control" />
+        <label class="form-label text-light" for="mailinput">Email Id</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- phone input -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto">
+      <div class="form-outline">
+        <input type="text" id="phoneinput" class="form-control" />
+        <label class="form-label text-light" for="phoneinput">Phone</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gender input -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto">
+        <span class="badge badge-info py-2 me-4">Gender</span>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input text-light" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+            <label class="form-check-label text-light" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+            <label class="form-check-label text-light" for="inlineRadio2">Female</label>
+        </div>
+    </div>
+  </div>
+  <!-- address input -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto">
+  <div class="form-outline mb-4">
+    <textarea class="form-control" id="adrinput" rows="4"></textarea>
+    <label class="form-label text-light" for="adrinput">Address</label>
+  </div>
+  <!-- state -->
+  <span class="badge badge-info me-5 px-4 py-2"> State</span>
+  <div class="dropdown">
+  <button
+    class="btn btn-primary dropdown-toggle"
+    type="button"
+    id="dropdownMenuButton"
+    data-mdb-toggle="dropdown"
+    aria-expanded="false"
+  >
+   Select a state
+  </button>
+  <ul class="dropdown-menu" id="state" >
+    <li><a class="dropdown-item" href="#">Kerala</a></li>
+    <li><a class="dropdown-item" href="#">Andhra Pradesh</a></li>
+    <li><a class="dropdown-item" href="#">Arunachal Pradesh</a></li>
+    <li><a class="dropdown-item" href="#">Assam</a></li>
+    <li><a class="dropdown-item" href="#">Bihar</a></li>
+    <li><a class="dropdown-item" href="#">Chhattisgarh</a></li>
+    <li><a class="dropdown-item" href="#">Goa</a></li>
+    <li><a class="dropdown-item" href="#">Gujarath</a></li>
+    <li><a class="dropdown-item" href="#">Haryana</a></li>
+    <li><a class="dropdown-item" href="#">Himachal Pradesh</a></li>
+    <li><a class="dropdown-item" href="#">Jharkhand</a></li>
+    <li><a class="dropdown-item" href="#">Karnataka</a></li>
+    <li><a class="dropdown-item" href="#">Madhya Pradesh</a></li>
+    <li><a class="dropdown-item" href="#">Maharashtra</a></li>
+    <li><a class="dropdown-item" href="#">Manipur</a></li>
+    <li><a class="dropdown-item" href="#">Meghalaya</a></li>
+    <li><a class="dropdown-item" href="#">Mizoram</a></li>
+    <li><a class="dropdown-item" href="#">Nagaland</a></li>
+    <li><a class="dropdown-item" href="#">Odisha</a></li>
+    <li><a class="dropdown-item" href="#">Punjab</a></li>
+    <li><a class="dropdown-item" href="#">Rajasthan</a></li>
+    <li><a class="dropdown-item" href="#">Sikkim</a></li>
+    <li><a class="dropdown-item" href="#">Tamil Nadu</a></li>
+    <li><a class="dropdown-item" href="#">Telangana</a></li>
+    <li><a class="dropdown-item" href="#">Tripura</a></li>
+    <li><a class="dropdown-item" href="#">Uttar Pradesh</a></li>
+    <li><a class="dropdown-item" href="#">Uttarakhand</a></li>
+    <li><a class="dropdown-item" href="#">West Bengal</a></li>
+    <li><hr class="dropdown-divider"/>-------Union Territory--------</li>
+    <li><a class="dropdown-item" href="#">Puducherry</a></li>
+    <li><a class="dropdown-item" href="#">Lakshadweep</a></li>
+    <li><a class="dropdown-item" href="#">Ladakh</a></li>
+    <li><a class="dropdown-item" href="#">Jammu and Kashmir</a></li>
+    <li><a class="dropdown-item" href="#">Delhi</a></li>
+    <li><a class="dropdown-item" href="#">Dadra and Nagar Haveli and Daman and Diu</a></li>
+    <li><a class="dropdown-item" href="#">Chandigarh</a></li>
+    <li><a class="dropdown-item" href="#">Andaman and Nicobar Islands</a></li>
+    
+  </ul>
+</div>
+</div>
+  </div>
+<!-- country -->
+    <div class="row mb-4 mt-5 pt-5">
+        <div class="col-sm-7 mx-auto ">
+            <div class="form-outline">
+        <input
+            class="form-control bg-dark text-info"
+            id="formControlReadonly"
+            type="text"
+            value="India"
+            aria-label="readonly input example"
+            readonly/>
+        <label class="form-label text-light " for="formControlReadonly">Country</label>
+    </div>
+    </div>
+    </div>
+  <!-- Checkbox -->
+  <div class="row mb-4 mt-5 pt-5">
+    <div class="col-sm-7 mx-auto text-light" id="check">
+        <!-- Default checkbox -->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+  <label class="form-check-label" for="flexCheckDefault">I agree to the guidelines issued by Welfare</label>
+</div>
+
+<!-- Checked checkbox -->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
+  <label class="form-check-label" for="flexCheckChecked">I, the primary applicant, certify that the information filled is correct and true.</label>
+</div>
+    </div>
+  </div>
+  
+  <!-- Submit button -->
+  <div class="row mb-4 mt-5 pt-5 mx-auto">
+    <div class="col-sm-3 mx-auto">
+        <button type="submit" class="btn btn-primary btn-block mb-5 ">Submit</button>
+    </div>
+  </div>
+  
+</form>
+
+<script src="./main.js"></script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>    
+</body>
+</html>
