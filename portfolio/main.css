@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-color {
+    background-color: #000000;
+}
+
+.hero-section {
+    height: 30rem;
+
+}
+
+.project-section {
+    height: 30rem;
+
+}
+
+.contact-section {
+    height: 30rem;
+
+}
