@@ -1,0 +1,11 @@
+.basic-grid{
+ display:grid;
+ gap:1rem;
+ grid-template-columns: repeat(Auto-fit, minmax(500px, 1fr));
+ 
+
+}
+.item{
+    
+
+}
