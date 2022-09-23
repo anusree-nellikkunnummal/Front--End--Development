@@ -1,0 +1,26 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+#intro {
+  background-image: url("./ofc.jpeg");
+  height: 750px;
+}
+@media (min-width: 768px) {
+  #intro {
+    height: 600px;
+  }
+}
+.links li {
+  list-style: none;
+}
+.links li::before {
+  content: "> ";
+  color: goldenrod;
+}
