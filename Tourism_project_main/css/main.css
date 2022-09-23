@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.image-header {
+  height: 60rem;
+}
+.art-size {
+  height: 25rem;
+}
+.goog::after {
+  content: " >";
+  color: #fff;
+}
